@@ -6,13 +6,14 @@ The purpose of this hobby project is to create a GUI in Laptop, which can displa
 ## Data acquisition in TI [TM4C123GXL](https://www.ti.com/tool/EK-TM4C123GXL)
 - High Performance TM4C123GH6PM MCU
 - Communication with Laptop using UART Serial communication
-- Used one 12-bit ADC with microphone [KY-037](http://sensorkit.en.joy-it.net/index.php?title=KY-037_Microphone_sensor_module_(high_sensitivity)) is used
+- One 12-bit ADC with microphone [KY-037](http://sensorkit.en.joy-it.net/index.php?title=KY-037_Microphone_sensor_module_(high_sensitivity)) is used
 - FFT is done with [CMSIS DSP library](https://www.ti.com/lit/an/spma041g/spma041g.pdf?ts=1591993440214&ref_url=https%253A%252F%252Fwww.google.de%252F)
 
 ## Analog low pass filter
 A combination of a passive CR circuit and an active RC circuit is designed, in order to filter the unwished frequency components below 50 Hz and above ca. 1500 Hz. As non-electronics engineer, I had to rely on my dark memory from "Electric circuit 1" lecture during the undergraudate course :)
 
-A universal circuit simulator [Qucs](http://qucs.sourceforge.net/) is used to calculate Bode plot. Qucs is avaiable in Ubuntu 18.04 LTS repository. 
+A universal circuit simulator [Qucs](http://qucs.sourceforge.net/) is used to calculate Bode plot. Qucs is avaiable in Ubuntu 18.04 LTS repository. One can find its Qucs file [here.](Analog%20Low%20Pass%20Filter/LPF_2nd_Bessel.sch)
+
 ![Circuit](Analog%20Low%20Pass%20Filter/LPF_Circuit.png)
 
 [The 2nd order bessel filter](https://web.mit.edu/6.101/www/reference/op_amps_everyone.pdf) was used and it might be necessary to amplify the input microphone signal in the interested frequency in future.
