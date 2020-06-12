@@ -40,7 +40,7 @@ GUI is written in C# and its main function is to get either time data (ADC) or f
 ## Open points
 - Increasing a sampling frequency
 - Improving the analog low pass filer performance
-- 800 Hz noise coming from Microphone (KY-39) through TI Launch pad
+- 800 Hz noise coming from Microphone (KY-37) through TI Launch pad
 
 ## Remarks
 Some parts of C# codes are got from internet search and I always tried to copy the codes **with reference** and **without violating any copyright**. Nevertheless, please let me know if there is any possible copyright infringement issue in the codes. Then, I will remove it from the repository immediately.
