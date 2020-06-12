@@ -1,5 +1,5 @@
 # Live FFT and Spectrogram
-The purpose of this hobby project is for creating a GUI in Laptop, which can display either the time or frequency data coming from TI Launchpad microcontroller (MCU). The animated gif below shows what this programs can do.
+The purpose of this hobby project is to create a GUI in Laptop, which can display either the time or frequency data coming from TI Launchpad microcontroller (MCU). The animated gif below shows what this program can do.
 
 ![LiveFFT](Demo/LiveFFT.gif)
 
@@ -10,12 +10,14 @@ The purpose of this hobby project is for creating a GUI in Laptop, which can dis
 - FFT is done with [CMSIS DSP library](https://www.ti.com/lit/an/spma041g/spma041g.pdf?ts=1591993440214&ref_url=https%253A%252F%252Fwww.google.de%252F)
 
 ## Analog low pass filter
-[Circuit](Demo/LPF_Circuit.gif)
-Low pass filter design
-Magnitude plot
-[Circuit](Demo/LPF_Circuit_Magnitude.gif)
-Picture
-[Circuit](Demo/LPF_Circuit_Picture.gif)
+A combination of a passive CR circuit and an active RC circuit is designed, in order to filter the unwished frequency components below 50 Hz and above ca. 1500 Hz. As non-electronics engineer, I had to rely on my dark memory from "Electric circuit 1" lecture during the undergraudate course :)
+
+A universal circuit simulator [Qucs](http://qucs.sourceforge.net/) is used to calculate Bode plot. Qucs is avaiable in Ubuntu 18.04 LTS repository. 
+![Circuit](Analog%20Low%20Pass%20Filter/LPF_Circuit.png)
+
+[The 2nd order bessel filter](https://web.mit.edu/6.101/www/reference/op_amps_everyone.pdf) was used and it might be necessary to amplify the input microphone signal in the interested frequency in future.
+
+![Bode](Analog%20Low%20Pass%20Filter/LPF_Bode.png)
 
 
 ## Graphical User Interface in C#
