@@ -5,7 +5,7 @@ The purpose of this hobby project is to create a GUI in Laptop, which can displa
 
 ## Data acquisition in TI [TM4C123GXL](https://www.ti.com/tool/EK-TM4C123GXL)
 - High Performance TM4C123GH6PM MCU
-- Communication with Laptop using UART Serial communication
+- Communication with Laptop using UART Serial
 - One 12-bit ADC with microphone [KY-037](http://sensorkit.en.joy-it.net/index.php?title=KY-037_Microphone_sensor_module_(high_sensitivity)) is used
 - FFT is done with [CMSIS DSP library](https://www.ti.com/lit/an/spma041g/spma041g.pdf?ts=1591993440214&ref_url=https%253A%252F%252Fwww.google.de%252F)
 
